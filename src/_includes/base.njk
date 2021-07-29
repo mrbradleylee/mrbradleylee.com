@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="{{ site.authorname }}" />
+        <meta name="description" content="{{ site.description }}" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{ '/resources/css/style.css' | url }}"
+        />
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <header>
+            <div class="flexbox-center">
+                <h1>{{ title }}</h1>
+                <nav></nav>
+            </div>
+        </header>
+        <main>
+            <div class="flexbox-center">
+                {{ content | safe }}
+            </div>
+        </main>
+        <footer>
+            <small>
+                <p>&copy; 2021: Bradley Lee + aliens from outer space</p>
+                <!-- <p><a href="#">Links</a></p> -->
+            </small>
+        </footer>
+    </body>
+</html>

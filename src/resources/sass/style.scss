@@ -1,0 +1,66 @@
+/*----------------------------------------------------------------------------*/
+//* SCSS VARS */
+/*----------------------------------------------------------------------------*/
+
+$font-stack: sans-serif;
+$font-mono: monospace;
+$primary-color: #2d2a2e;
+$secondary-color: #fafafa;
+$link: #ff6188;
+$link-hover: #a9dc76;
+
+/*----------------------------------------------------------------------------*/
+//* CORE SETUP */
+/*----------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: 5vh clamp(1rem, 5vw, 3rem) 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; // TODO fix later when more content comes
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    //! fix this later
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----------------------------------------------------------------------------*/
+//* LAYOUT */
+/*----------------------------------------------------------------------------*/
+
+footer {
+    margin-top: 2em;
+    color: #888;
+}
+/*----------------------------------------------------------------------------*/
+//* COMPONENTS */
+/*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*/
+//* LINKS */
+/*----------------------------------------------------------------------------*/
+
+a:link,
+a:visited {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid $link;
+}
+
+a:hover,
+a:active {
+    color: $primary-color;
+    text-decoration: none;
+    border-bottom: 1px solid $link-hover;
+}

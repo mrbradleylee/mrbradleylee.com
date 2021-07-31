@@ -1,5 +1,6 @@
-# STYLE GUIDE
-
+---
+layout: base.njk
+title: Style Guide
 ---
 
 ## Headers

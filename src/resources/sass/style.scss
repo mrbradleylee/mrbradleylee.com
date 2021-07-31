@@ -5,9 +5,11 @@
 $font-stack: sans-serif;
 $font-mono: monospace;
 $primary-color: #2d2a2e;
-$secondary-color: #fafafa;
-$link: #ff6188;
-$link-hover: #a9dc76;
+$secondary-color: #e0e0e0;
+$link-red: #ff6188;
+$link-orange: #fc9867;
+$link-green: #a9dc76;
+$link-blue: #78dce8;
 
 /*----------------------------------------------------------------------------*/
 //* CORE SETUP */
@@ -18,20 +20,23 @@ $link-hover: #a9dc76;
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $font-stack;
     font-size: 16px;
-    line-height: 1.4em;
+    line-height: 1.5em;
+    color: $secondary-color;
+    background-color: $primary-color;
     padding: 5vh clamp(1rem, 5vw, 3rem) 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center; // TODO fix later when more content comes
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
-    //! fix this later
-    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 75ch; // TODO fix this into the child elements (maybe)
 }
 
 /*----------------------------------------------------------------------------*/
@@ -41,6 +46,8 @@ body {
 footer {
     margin-top: 2em;
     color: #888;
+    display: flex;
+    justify-content: center; //! center or left?
 }
 /*----------------------------------------------------------------------------*/
 //* COMPONENTS */
@@ -52,15 +59,17 @@ footer {
 
 a:link,
 a:visited {
-    color: $primary-color;
+    color: $link-red;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 1px solid $link;
+    border-bottom: 1px solid $link-blue;
+    transition: all 0.25s linear;
 }
 
 a:hover,
 a:active {
-    color: $primary-color;
+    color: $link-orange;
     text-decoration: none;
-    border-bottom: 1px solid $link-hover;
+    border-bottom: 1px solid $link-green;
+    transition: all 0.25s linear;
 }

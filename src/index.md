@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Sup World.
+title: 👋 Sup World.
 ---
 
 <br><br>

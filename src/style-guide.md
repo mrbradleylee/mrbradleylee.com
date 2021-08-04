@@ -126,7 +126,7 @@ Single backticks present `code`
 
 Can be indented, but we'll stick to fencing with 3x `
 
-```
+```html
 <html>
     <head></head>
     <body><body>

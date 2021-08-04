@@ -5,7 +5,7 @@
 $font-stack: sans-serif;
 $font-mono: monospace;
 $primary-color: #2d2a2e;
-$secondary-color: #e0e0e0;
+$secondary-color: #fff;
 $link-red: #ff6188;
 $link-orange: #fc9867;
 $link-green: #a9dc76;
@@ -52,6 +52,41 @@ footer {
 /*----------------------------------------------------------------------------*/
 //* COMPONENTS */
 /*----------------------------------------------------------------------------*/
+
+h2,
+h3 {
+    margin-top: 1.5em;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+}
+
+pre {
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+code {
+    display: block;
+    padding: 1em;
+    max-width: 100%;
+    background: #222;
+    border-radius: 0.3em;
+}
+
+blockquote {
+    // font-size: 1.1875em; /* 19px /16 */
+    // color: #666;
+    margin: 1.5em 0;
+    padding: 0 1em;
+    max-width: 31.57894736842em; /* 600px /19 */
+    border-left: 6px solid $link-red;
+}
 
 /*----------------------------------------------------------------------------*/
 //* LINKS */

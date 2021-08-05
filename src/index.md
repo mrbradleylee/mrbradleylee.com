@@ -1,6 +1,9 @@
 ---
 layout: base
 title: 👋 Sup World.
+eleventyNavigation:
+    key: Home
+    order: 1
 ---
 
 <br>

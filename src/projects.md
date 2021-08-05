@@ -1,9 +1,10 @@
 ---
 title: 💻 Projects
 layout: base.njk
+eleventyNavigation:
+    key: Projects
+    order: 2
 ---
-
-<br>
 
 ## <a href="https://github.com/bleemf/nimbus_gitlab" target="_blank">GitLab in Docker</a>
 
@@ -17,11 +18,11 @@ Technologies used:
 
 ## [mrbradleylee.com](/)
 
-Personal project for front-end practice. And my musings. The goal is to retain fast load and build times, and use minimal frameworks.
+Personal portfolio and project for front-end practice. And my musings. The goal is to retain fast loading and build times.
 
 Technologies used:
 
 -   VSCode and vim
 -   Source managed in GitHub
 -   Built and hosted in Netlify
--   Node + 11ty + sass
+-   Node + 11ty

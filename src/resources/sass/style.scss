@@ -6,10 +6,12 @@ $font-stack: sans-serif;
 $font-mono: monospace;
 $primary-color: #2d2a2e;
 $secondary-color: #fff;
-$link-red: #ff6188;
-$link-orange: #fc9867;
-$link-green: #a9dc76;
-$link-blue: #78dce8;
+$red: #ff6188;
+$orange: #fc9867;
+$yellow: #ffd866;
+$green: #a9dc76;
+$blue: #78dce8;
+$purple: #ab9df2;
 
 /*----------------------------------------------------------------------------*/
 //* CORE SETUP */
@@ -39,16 +41,54 @@ body {
     max-width: 75ch; // TODO fix this into the child elements (maybe)
 }
 
-/*----------------------------------------------------------------------------*/
-//* LAYOUT */
-/*----------------------------------------------------------------------------*/
-
 footer {
-    margin-top: 2em;
+    margin-top: 3em;
     color: #888;
     display: flex;
     justify-content: center; //! center or left?
 }
+
+footer {
+    a:link,
+    a:visited {
+        color: $green;
+        border: none;
+    }
+
+    a:hover,
+    a:active {
+        color: $purple;
+        border: none;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0 0 3em 0;
+        padding: 0;
+    }
+
+    li {
+        padding-right: 1em;
+    }
+
+    a:link,
+    a:visited {
+        display: block;
+        color: $red;
+        border-bottom: 1px solid transparent;
+    }
+
+    a:hover,
+    a:active {
+        display: block;
+        color: $orange;
+        border-bottom: 1px solid $green;
+    }
+}
+
 /*----------------------------------------------------------------------------*/
 //* COMPONENTS */
 /*----------------------------------------------------------------------------*/
@@ -58,9 +98,14 @@ h3 {
     margin-top: 1.5em;
 }
 
+h2 {
+    margin-bottom: 0.8em;
+}
+
 p {
     display: block;
-    margin-block-start: 1em;
+    margin-bottom: 0.5em;
+    // margin-block-start: 1em;
 }
 
 pre {
@@ -71,21 +116,13 @@ pre {
     word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
-code {
-    display: block;
-    padding: 1em;
-    max-width: 100%;
-    background: #222;
-    border-radius: 0.3em;
-}
-
 blockquote {
     // font-size: 1.1875em; /* 19px /16 */
     // color: #666;
     margin: 1.5em 0;
     padding: 0 1em;
     max-width: 31.57894736842em; /* 600px /19 */
-    border-left: 6px solid $link-red;
+    border-left: 6px solid $red;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -94,17 +131,33 @@ blockquote {
 
 a:link,
 a:visited {
-    color: $link-red;
+    color: $blue;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 1px solid $link-blue;
+    border-bottom: 1px solid $yellow;
     transition: all 0.25s linear;
 }
 
 a:hover,
 a:active {
-    color: $link-orange;
+    color: $purple;
     text-decoration: none;
-    border-bottom: 1px solid $link-green;
+    border-bottom: 1px solid $orange;
     transition: all 0.25s linear;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.postdate {
+    display: block;
+    color: #888;
+    margin-top: 1ch;
+}
+
+.postexcerpt {
+    margin-left: 1em;
+    margin-bottom: 2em;
 }

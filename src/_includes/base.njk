@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="{{ site.authorname }}" />
         <meta name="description" content="{{ site.description }}" />
+        <link rel="stylesheet" type="text/css" href="/resources/css/prism.css">
         <link
             rel="stylesheet"
             type="text/css"
@@ -16,8 +17,17 @@
     <body>
         <header>
             <div class="flexbox-center">
-                <h1>{{ title }}</h1>
-                <nav></nav>
+                <nav>
+                    {% set navPages = collections.all | eleventyNavigation %}
+                    <ul>
+                        {%- for entry in navPages %}
+                        <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+                            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                        </li>
+                        {%- endfor %}
+                    </ul>
+                </nav>
+                <h1 class="hero">{{ title }}</h1>
             </div>
         </header>
         <main>
@@ -27,9 +37,10 @@
         </main>
         <footer>
             <small>
-                <p>&copy; 2021: Bradley Lee + the helpful otter 🦦</p>
+                <p>&copy; 2021: <a href="/">mrbradleylee.com</a> + the helpful otter 🦦</p>
                 <!-- <p><a href="#">Links</a></p> -->
             </small>
         </footer>
+        <script src="/resources/js/prism.js"></script>
     </body>
 </html>

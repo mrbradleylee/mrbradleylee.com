@@ -1,9 +1,16 @@
 ---
-layout: base.njk
 title: Style Guide
+tags: general
+---
+
+This is a reference doc for the markdown syntax used to render the content here.
+It's a living document that will be updated as the styles change, along with liberal use of codeblocks. ;)
+
 ---
 
 ## Headers
+
+<br>
 
 # This is an H1
 
@@ -126,11 +133,14 @@ Single backticks present `code`
 
 Can be indented, but we'll stick to fencing with 3x `
 
-```html
-<html>
-    <head></head>
-    <body><body>
-</html>
+```css
+pre {
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
 ```
 
 ### Links
@@ -148,6 +158,6 @@ Images can be referenced with !. We don't have any yet, so there's that.
 
 In a codeblock for reference
 
-```
+```css
 [![An old rock in the desert](/path/to/image.jpg "Shiprock, New Mexico by Beau Rogers")](link if needed)
 ```

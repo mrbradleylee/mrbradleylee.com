@@ -38,14 +38,14 @@ body {
     text-rendering: optimizeLegibility;
     margin-left: auto;
     margin-right: auto;
-    max-width: 75ch; // TODO fix this into the child elements (maybe)
+    max-width: 75ch;
 }
 
 footer {
     margin-top: 3em;
     color: #888;
     display: flex;
-    justify-content: center; //! center or left?
+    justify-content: center;
 }
 
 footer {
@@ -106,12 +106,9 @@ h3 {
 p {
     display: block;
     margin-bottom: 1em;
-    // margin-block-start: 1em;
 }
 
 blockquote {
-    // font-size: 1.1875em; /* 19px /16 */
-    // color: #666;
     font-style: italic;
     margin: 1.5em 0;
     padding: 0 1em;
@@ -145,15 +142,22 @@ a:active {
     transition: all 0.25s linear;
 }
 
+/*----------------------------------------------------------------------------*/
+//* CLASSES */
+/*----------------------------------------------------------------------------*/
+
+// adjust page title header
 .hero {
     text-align: center;
     margin-bottom: 1em;
 }
 
+// index name
 .name {
     color: $orange;
 }
 
+// customizations for posts.md loop
 .postheader {
     display: flex;
     align-items: baseline;
@@ -173,12 +177,15 @@ a:active {
 }
 
 .postexcerpt:after {
-    display: flex;
-    justify-content: center;
-    color: $red;
-    content: "________";
+    display: block;
+    height: 1px;
+    width: 15ch;
+    background-color: $red;
+    content: " ";
+    margin: 2em auto;
 }
 
+// posts page is looped into article blocks.
 article {
     h2 {
         margin-bottom: 0.5em;
@@ -198,6 +205,7 @@ article {
     }
 }
 
+// center pagination links
 .postpagination {
     display: flex;
     justify-content: center;

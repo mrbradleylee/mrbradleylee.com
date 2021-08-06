@@ -71,21 +71,25 @@ nav {
     }
 
     li {
-        padding-right: 1em;
+        margin-right: 1em;
+    }
+
+    li.nav-active a {
+        border-bottom: 2px solid $blue;
     }
 
     a:link,
     a:visited {
         display: block;
         color: $red;
-        border-bottom: 1px solid transparent;
+        border-bottom: 2px solid transparent;
     }
 
     a:hover,
     a:active {
         display: block;
         color: $orange;
-        border-bottom: 1px solid $green;
+        border-bottom: 2px solid $green;
     }
 }
 
@@ -96,33 +100,28 @@ nav {
 h2,
 h3 {
     margin-top: 1.5em;
-}
-
-h2 {
     margin-bottom: 0.8em;
 }
 
 p {
     display: block;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     // margin-block-start: 1em;
-}
-
-pre {
-    white-space: pre-wrap; /* css-3 */
-    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-    white-space: -pre-wrap; /* Opera 4-6 */
-    white-space: -o-pre-wrap; /* Opera 7 */
-    word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 blockquote {
     // font-size: 1.1875em; /* 19px /16 */
     // color: #666;
+    font-style: italic;
     margin: 1.5em 0;
     padding: 0 1em;
     max-width: 31.57894736842em; /* 600px /19 */
     border-left: 6px solid $red;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -151,13 +150,55 @@ a:active {
     margin-bottom: 1em;
 }
 
+.name {
+    color: $orange;
+}
+
+.postheader {
+    display: flex;
+    align-items: baseline;
+}
+
+.posttag {
+    color: $purple;
+}
+
 .postdate {
-    display: block;
-    color: #888;
-    margin-top: 1ch;
+    color: $orange;
+    margin-left: auto;
 }
 
 .postexcerpt {
-    margin-left: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+}
+
+.postexcerpt:after {
+    display: flex;
+    justify-content: center;
+    color: $red;
+    content: "________";
+}
+
+article {
+    h2 {
+        margin-bottom: 0.5em;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0.3em;
+    }
+
+    li {
+        font-size: 0.9em;
+        display: inline-block;
+        color: $green;
+        padding-right: 1ch;
+    }
+}
+
+.postpagination {
+    display: flex;
+    justify-content: center;
 }

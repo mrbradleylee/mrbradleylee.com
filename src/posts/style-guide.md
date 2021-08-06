@@ -1,6 +1,9 @@
 ---
 title: Style Guide
-tags: general
+tags:
+    - general
+    - reference
+date: 2021-07-27
 ---
 
 This is a reference doc for the markdown syntax used to render the content here.

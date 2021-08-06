@@ -9,7 +9,7 @@
         "build:sass": "sass src/resources/sass:_site/resources/css",
         "watch:eleventy": "eleventy --serve",
         "build:eleventy": "eleventy",
-        "dev": "npm-run-all build:sass --parallel watch:*",
+        "serve": "npm-run-all build:sass --parallel watch:*",
         "build": "npm-run-all build:*"
     },
     "keywords": [],

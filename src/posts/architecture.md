@@ -1,10 +1,11 @@
 ---
 title: Architecture
 tags: general
+date: 2021-08-02
 ---
 
-As much as we'd like to avoid frameworks, they most definitely make life easier.
-Here's a list of frameworks and plugins in use on this site.
+This go around, we're embracing frameworks, they most definitely make life easier.
+Here's a list of frameworks, prebuilts, and plugins in use on this site.
 
 ---
 

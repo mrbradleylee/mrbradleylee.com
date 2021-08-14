@@ -176,7 +176,8 @@ a:active {
     margin-bottom: 3em;
 }
 
-.postexcerpt:after {
+.postexcerpt:after,
+.project:after {
     display: block;
     height: 1px;
     width: 15ch;

@@ -8,6 +8,8 @@ eleventyNavigation:
 
 ![Projects](/resources/img/projects.svg)
 
+<div class="project">
+
 ## 💻 <a href="https://github.com/bleemf/nimbus_gitlab" target="_blank">GitLab in Docker</a>
 
 Self hosted GitLab implementation using Docker containers integrated into the existing demo environment. GitLab stores a static React page built with Gatsby and also uses a containerized Gitlab Runner for the CI build pipeline. Used to show GitLab integrations with Micro Focus ALM Octane.
@@ -17,6 +19,10 @@ Technologies used:
 -   GitLab
 -   Docker
 -   Docker Compose
+
+</div>
+
+<div class="project">
 
 ## 💻 [mrbradleylee.com](/)
 
@@ -29,6 +35,9 @@ Technologies used:
 -   Built and hosted in Netlify
 -   Node + 11ty
 
+</div>
+<div class="project">
+
 ## 🎙 <a href="https://www.brighttalk.com/webcast/8653/424227/enable-continuous-delivery-with-micro-focus-deployment-automation-and-alm-octane" target="_blank">Continous Delivery with Micro Focus</a>
 
 Webinar (delivered Summer 2020) showcasing Micro Focus Deployment Automation adding continuous
@@ -38,3 +47,5 @@ Technologies covered:
 
 -   Automated Deployments in CI/CD Pipelines
 -   DevOps tool integrations
+
+</div>

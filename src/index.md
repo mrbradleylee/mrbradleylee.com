@@ -15,7 +15,7 @@ I have a passion for automation in all shapes and sizes.
 <br>
 
 Work: Solutions Architect.<br>
-Supporting: Application Delivery Solutions.<br>
+Supporting: Single Platform DevOps 😉<br>
 Skills: Agile, DevOps, CI/CD, Functional and Performance Test Automation.<br>
 Currently: learning front-end.
 <br>

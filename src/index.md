@@ -15,7 +15,7 @@ I have a passion for automation in all shapes and sizes.
 <br>
 
 Work: Solutions Architect.<br>
-Supporting: Single Platform DevOps 😉<br>
+Supporting: <a href="https://about.gitlab.com" target="_blank">Single Platform DevOps 😉</a><br>
 Skills: Agile, DevOps, CI/CD, Functional and Performance Test Automation.<br>
 Currently: learning front-end.
 <br>
